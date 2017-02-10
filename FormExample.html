@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registraion</title>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<form>
+
+<label for = "first">First Name:</label>
+<input name = "first" id ="first" type="text" placeholder="John" required>
+
+<label for = "last">Last Name:</label>
+<input name = "last" id = "last" type="text" placeholder="Smith" required>
+
+<div>
+<label for = "male">Male</label>
+<input name = "gender" id = "male" type="radio" value ="male">
+
+<label for = "female">Female</label>
+<input name = "gender" id = "female" type="radio" value = "female">
+
+<label for = "other">Other</label>
+<input name = "gender" id = "other" type="radio" value = "other">
+</div>
+
+<div>
+<label for = "email">Email:</label>
+<input name = "email" id ="email" type="email" placeholder="your email" required>
+
+<label for = "passwod">Password:</label>
+<input name = "password" id = "password" type="password" placeholder="password" pattern = ".{5,10}" required title = "Password must be between 5 and 10">
+</div>
+
+<div>
+
+<label>
+Birthday
+<select name = "month" placeholder = "Month">
+	<option value = "jan">Jan</option>
+	<option value = "jan">Jan</option>
+	<option value = "Feb">Feb</option>
+</select>
+
+<select name = "Day" placeholder = "Day">
+	<option value = "01">01</option>
+	<option value = "02">02</option>
+</select>
+
+<select name = "Year" placeholder = "Year">
+	<option value = "2017">2017</option>
+	<option value = "2016">2016</option>
+</select>
+</label>
+</div>
+
+<div>
+<label for = "agreed">I agree to the terms and conditions</label>
+<input name = "agreed" id = "agreed" type="checkbox" value = "agreed" required>
+</div>
+
+<input type="submit">
+
+</form>
+
+</body>
+</html>
